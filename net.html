@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetFlix</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+}
+
+header {
+  background-color: #000;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+ul li {
+  margin-right: 10px;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: #e50914;
+}
+
+nav img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  margin-right: 10px;
+}
+
+.sec {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: calc(100% - 100px);
+  overflow-y: auto;
+}
+
+.sec > div {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.sec img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="netflix.png">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+            <img src="search.png">
+            <input type="text" placeholder="Search">
+            <img src="notification.png">
+        </nav>
+    </header>
+    <section class="sec">
+        <div class="d1">
+            <h1>Popular on Netflix</h1>
+            <img src="s2.jpg">
+            <img src="s3.jpg">
+            <img src="s4.jpg">
+            <img src="s5.jpg">
+        </div>
+        <div class="d2">
+            <h1>Trending Now</h1>
+            <img src="d1.jpg">
+            <img src="d2.jpg">
+            <img src="d3.jpg">
+            <img src="s3.jpg">
+            <img src="d5.jpg">
+        </div>
+        <div class="d3">
+            <h1>New Releases</h1>
+            <img src="p1.jpg">
+            <img src="p2.jpg">
+            <img src="p3.jpg">
+            <img src="p4.jpg">
+            <img src="s6.jpg">
+        </div>
+    </section>
+    <div class="footer">
+        &copy; 2023 Netflix. All rights reserved.
+    </div>
+</body>
+</html>
